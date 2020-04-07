@@ -1,38 +1,206 @@
-.App {
-  text-align: center;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300&family=Satisfy&display=swap');
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.container-home{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  padding-left: 15rem;
+  padding-top: 15rem;
+  background-color: rgb(216, 214, 214);
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+  /* margin-bottom: 1.5rem; */
+  position: relative;
+  height: 47em;
+  overflow: hidden;
+  box-shadow: -5px 10px 12px rgb(148, 146, 146);
 }
 
-.App-link {
-  color: #61dafb;
+.firstName {
+  text-align: left;
+  color: black;
+  font-size: 3.5em;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-shadow: 0 2px 0 rgba(0,0,0,0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.lastName {
+  text-align: left;
+  color: #de7119;
+  font-size: 3.5rem;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.title{
+  text-align: left;
+  font-size: 2rem;
+  color: rgb(7, 7, 7);
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container-letter{
+  width: 40%;
+  height: 30%;
+}
+
+
+.container-photo{
+  margin: 0 auto;
+  margin-left: 30rem;
+}
+
+.image{
+  margin: 0 auto;
+  width: 53%;
+  filter: drop-shadow(10px 5px 25px rgb(98, 98, 98));
+}
+
+.title{
+  font-size: 3rem;
+}
+
+.container-profile{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* position: relative;
+  box-shadow: -5px 10px 12px rgb(148, 146, 146); */
+}
+
+.container-about{
+  background-color: #de7119;
+  height: 50em;
+}
+
+.container-about h1{
+ text-align: center;
+ margin-top: 20rem;
+ font-size: 5rem;
+ font-family: 'Dancing Script', cursive;
+}
+
+.container-p{
+  background-color:  rgb(216, 214, 214);
+}
+
+.container-p p{
+  padding: 50px;
+  text-align: left;
+  align-self: flex-start;
+  font-size: 1.5em;
+  margin-top: 12rem;
+  font-weight: 20%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container-skill{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.container-topic{
+  background-color:  rgb(216, 214, 214);
+}
+
+.container-topic h1{
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 20rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.container-list{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin-top: 60px;
+  grid-gap: 30px;
+  
+}
+
+.container-list li{
+  width: 200px;
+  height: 150px;
+  margin-left: 10rem;
+  list-style-type: none;
+  text-align: center;
+  box-shadow: 0 6px 15px 6px rgb(180, 178, 178);
+
+}
+
+
+.container-home a {
+  background:  #de7119;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding:10px 25px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 30px;
+  box-shadow: 5px 5px 5px rgb(117, 117, 117);
+}
+
+.change-animation:before{
+  content: 'Full Stack Developer.';
+  animation: animate infinite 6s;
+}
+
+@keyframes animate{
+  20%{
+    content: 'Architect.';
   }
-  to {
-    transform: rotate(360deg);
+  40%{
+    content: 'Designer.';
   }
 }
