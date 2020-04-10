@@ -1,5 +1,10 @@
 import React from 'react';
 import me from "../photo/parada.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+library.add(fab)
+
 
 function App() {
   return (
@@ -14,6 +19,14 @@ function App() {
                 <br></br>
                 <br></br>
                 <a className="button-contact" href="/contactMe">Contact Me</a>
+            <div className='container-icons'>
+                <ul className='list-of-icons'>
+                    <li><FontAwesomeIcon icon={['fab', 'facebook']}/></li>
+                    <li><FontAwesomeIcon icon={['fab', 'instagram']}/></li>
+                    <li><FontAwesomeIcon icon={['fab', 'twitter']}/></li>
+                    <li><FontAwesomeIcon icon={['fab', 'github']}/></li>  
+                </ul>
+            </div>
             </div>
             <div className="container-photo">
                 <img src={me} className="image"/>

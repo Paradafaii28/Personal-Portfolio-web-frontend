@@ -117,7 +117,7 @@ body {
 .image{
   margin: 0 auto;
   width: 60%;
-  filter: drop-shadow(10px 5px 25px rgb(98, 98, 98));
+  filter: drop-shadow(10px 5px 25px rgb(189, 105, 9));
 }
 
 
@@ -126,7 +126,25 @@ body {
   grid-template-columns: 50% 50%;
 }
 
-a {text-decoration: none; 
+.container-icons {
+  margin-right: 10em;
+}
+
+.container-icons ul{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 8em;
+  width: 50%;
+}
+
+.container-icons li {
+  font-size: 1.5em !important;
+}
+
+
+a {
+  text-decoration: none; 
   color: black;
 }
 
@@ -146,6 +164,8 @@ a {text-decoration: none;
   content: 'Full Stack Developer.';
   animation: animate infinite 6s;
 }
+
+
 
 @keyframes animate{
   20%{
