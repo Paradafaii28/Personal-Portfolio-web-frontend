@@ -53,27 +53,35 @@ table {
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300&family=Satisfy&display=swap');
 
 
+body {
+  padding: 30px;
+}
+
 .container-home{
   display: flex;
   flex-direction: row;
   padding-left: 15rem;
-  padding-top: 15rem;
-  background-color: rgb(216, 214, 214);
+  padding-top: 25rem;
+  padding-right: 10rem;
+  background-image: linear-gradient(
+    to right bottom, 
+    #bbbbbb, 
+    #de7119);
   background-repeat: no-repeat;
   margin-top: 5rem;
-  /* margin-bottom: 1.5rem; */
   position: relative;
-  height: 47em;
+  height: 47vh;
   overflow: hidden;
   box-shadow: -5px 10px 12px rgb(148, 146, 146);
 }
 
 .firstName {
+  width: 47rem;
   text-align: left;
   color: black;
   font-size: 3.5em;
   font-family: 'Noto Sans JP', sans-serif;
-  text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+  text-shadow: 0 3px 0 rgba(202, 202, 202, 0.5);
 }
 
 .lastName {
@@ -85,7 +93,7 @@ table {
 
 .title{
   text-align: left;
-  font-size: 2rem;
+  font-size: 3rem;
   color: rgb(7, 7, 7);
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -99,96 +107,57 @@ table {
 .container-photo{
   margin: 0 auto;
   margin-left: 30rem;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  /* animation-delay: 1s; */
+
 }
 
 .image{
   margin: 0 auto;
-  width: 53%;
-  filter: drop-shadow(10px 5px 25px rgb(98, 98, 98));
+  width: 60%;
+  filter: drop-shadow(10px 5px 25px rgb(189, 105, 9));
 }
 
-.title{
-  font-size: 3rem;
-}
 
 .container-profile{
   display: grid;
   grid-template-columns: 50% 50%;
-  /* position: relative;
-  box-shadow: -5px 10px 12px rgb(148, 146, 146); */
 }
 
-.container-about{
-  background-color: #de7119;
-  height: 50em;
+.container-icons {
+  margin-right: 10em;
 }
 
-.container-about h1{
- text-align: center;
- margin-top: 20rem;
- font-size: 5rem;
- font-family: 'Dancing Script', cursive;
+.container-icons ul{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 8em;
+  width: 50%;
 }
 
-.container-p{
-  background-color:  rgb(216, 214, 214);
+.container-icons li {
+  font-size: 1.5em !important;
 }
 
-.container-p p{
-  padding: 50px;
-  text-align: left;
-  align-self: flex-start;
-  font-size: 1.5em;
-  margin-top: 12rem;
-  font-weight: 20%;
-  font-family: 'Quicksand', sans-serif;
+
+a {
+  text-decoration: none; 
+  color: black;
 }
-
-.container-skill{
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-.container-topic{
-  background-color:  rgb(216, 214, 214);
-}
-
-.container-topic h1{
-  text-align: center;
-  font-size: 5rem;
-  margin-top: 20rem;
-  font-family: 'Dancing Script', cursive;
-}
-
-.container-list{
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  margin-top: 60px;
-  grid-gap: 30px;
-  
-}
-
-.container-list li{
-  width: 200px;
-  height: 150px;
-  margin-left: 10rem;
-  list-style-type: none;
-  text-align: center;
-  box-shadow: 0 6px 15px 6px rgb(180, 178, 178);
-
-}
-
 
 .container-home a {
   background:  #de7119;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.2em;
   text-decoration: none;
-  padding:10px 25px;
+  padding:7px 17px;
   border-radius: 5px;
   display: inline-block;
   margin-top: 30px;
-  box-shadow: 5px 5px 5px rgb(117, 117, 117);
+  box-shadow: 5px 5px 5px rgb(65, 63, 63);
 }
 
 .change-animation:before{
@@ -196,11 +165,29 @@ table {
   animation: animate infinite 6s;
 }
 
+
+
 @keyframes animate{
   20%{
     content: 'Architect.';
   }
   40%{
     content: 'Designer.';
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80%{
+    transform: translateX(10px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
   }
 }

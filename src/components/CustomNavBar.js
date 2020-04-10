@@ -15,6 +15,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import './CustomNavBar.css'
+import {Link} from 'react-router-dom'
 
 const useStyles = makeStyles((theme) => ({
   navbar: {
@@ -119,8 +120,15 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <Link to={'/profile'}>
+      {<MenuItem onClick={handleMenuClose}>Profile</MenuItem>}
+      </Link>
+      <Link to={'/myAccount'}>
+      {<MenuItem onClick={handleMenuClose}>My account</MenuItem>}
+      </Link>
+      <Link to={'/login'}>
+      {<MenuItem onClick={handleMenuClose}>Log In</MenuItem>}
+      </Link>
     </Menu>
   );
 
@@ -177,9 +185,11 @@ export default function PrimarySearchAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
+          <Link to={'/'}>
+          {<Typography className={classes.title} variant="h6" noWrap>
             Portfolio Web
-          </Typography>
+          </Typography>}
+          </Link>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
@@ -196,12 +206,14 @@ export default function PrimarySearchAppBar() {
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="secondary">
+              <Badge badgeContent={0} color="secondary">
+                <a href='mailto:paradafaii28@gmail.com'>
                 <MailIcon />
+                </a>
               </Badge>
             </IconButton>
             <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Badge badgeContent={17} color="secondary">
+              <Badge badgeContent={0} color="secondary">
                 <NotificationsIcon />
               </Badge>
             </IconButton>
