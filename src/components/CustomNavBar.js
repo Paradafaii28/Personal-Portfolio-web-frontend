@@ -120,8 +120,8 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <Link to={'/profile'}>
-      {<MenuItem onClick={handleMenuClose}>Profile</MenuItem>}
+      <Link to={'/project'}>
+      {<MenuItem onClick={handleMenuClose}>Project</MenuItem>}
       </Link>
       <Link to={'/myAccount'}>
       {<MenuItem onClick={handleMenuClose}>My account</MenuItem>}
@@ -172,8 +172,6 @@ export default function PrimarySearchAppBar() {
       </MenuItem>
     </Menu>
   );
-
-
 
   return (
     <div className={classes.grow}>

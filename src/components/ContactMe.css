@@ -1,0 +1,101 @@
+#container-background {
+    padding-left: 15rem;
+    padding-top: 25rem;
+    padding-right: 10rem;
+    background-image: linear-gradient(
+        to right bottom, 
+        #bbbbbb, 
+        #de7119);
+        background-repeat: no-repeat;
+        margin-top: 5rem;
+        position: relative;
+        height: 47vh;
+        overflow: hidden;
+        box-shadow: -5px 10px 12px rgb(148, 146, 146);
+    }
+
+.sucess-msg {
+    color: #57A773;
+    padding: 10px 15px;
+}
+
+.err-msg {
+    color: #fa2626;
+    padding: 10px 15px;
+}
+
+#container{
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+    
+
+.envelope{
+    background-color: #dddcdc;
+    height: 150px;
+    width: 270px;
+    position: relative;
+    left: 40px;
+    top: 160px;
+}
+
+.paper{
+    background-color: white;
+    height: 150px;
+    width: 250px;
+    position: relative;
+    left: 10px;    
+}
+
+.inner1{
+    width: 0;
+    height: 0;
+    border-bottom: 150px solid #dddcdc;
+    border-right: 250px solid transparent;
+    bottom: 150px;
+}
+
+.inner2 {
+    width: 0;
+    height: 0;
+    border-bottom: 150px solid #dddcdc;
+    border-left: 250px solid transparent;
+    bottom: 150px;
+}
+
+.cover {
+    width: 0;
+    height: 0;
+    border-right: 135px solid transparent;
+    border-left: 135px solid transparent;
+    border-top: 75px solid #dddcdc;
+    position: relative;
+    bottom: 150px;
+    right: 10px;
+    transform-origin: top;
+}
+
+.envelope:hover .cover{
+    transform: rotateX(180deg);
+}
+
+
+.form-container {
+    background-color: rgb(109, 108, 107);
+    width: 100px;
+   
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
