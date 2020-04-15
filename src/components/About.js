@@ -1,7 +1,7 @@
 import React from 'react'
-import './Profile.css'
+import './About.css'
 
-export default function Profile() {
+export default function About() {
     return (
         <div>
             <div className="container-profile">
