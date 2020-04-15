@@ -4,7 +4,6 @@ import './App.css';
 import Home from "./components/Home"
 import ContactMe from "./components/ContactMe"
 import Project from "./components/Project"
-import Icon from "./components/Icon"
 import MyAccount from "./components/MyAccount"
 import LogIn from "./components/LogIn"
 import { BrowserRouter as Router, Route} from 'react-router-dom'

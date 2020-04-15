@@ -2,7 +2,7 @@ import React from 'react';
 import me from "../photo/parada.png"
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import Profile from './Project';
+import About from './About';
 import Icon from './Icon';
 library.add(fab)
 
@@ -22,10 +22,10 @@ function App() {
           <Icon />
             </div>
             <div className="container-photo">
-                <img src={me} alt="" className="image"/>
+                <img src={me} className="image"/>
             </div>
         </div>      
-        <Profile />
+        <About/>
     </div>
 
   );

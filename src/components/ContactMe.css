@@ -1,101 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
+
 #container-background {
     padding-left: 15rem;
     padding-top: 25rem;
     padding-right: 10rem;
     background-image: linear-gradient(
-        to right bottom, 
-        #bbbbbb, 
-        #de7119);
-        background-repeat: no-repeat;
-        margin-top: 5rem;
-        position: relative;
-        height: 47vh;
-        overflow: hidden;
-        box-shadow: -5px 10px 12px rgb(148, 146, 146);
+        -45deg, 
+        #a0a0a0ea, 
+        #de7119,
+        #fa2c2c,
+        #1babee);
+    background-repeat: no-repeat;
+    background-size: 400% 400%;
+    margin-top: 5rem;
+    position: relative;
+    height: 47vh;
+    overflow: hidden;
+    box-shadow: -5px 10px 12px rgb(148, 146, 146);
+    animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change{
+    0% {
+        background-position: 0 50%;
     }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.graphic-bg{
+    position: relative;
+    top:-170px;
+    width: 53%;
+}
 
 .sucess-msg {
-    color: #57A773;
+    color: rgb(6, 58, 24);
     padding: 10px 15px;
+    font-size: 15px;
 }
 
 .err-msg {
-    color: #fa2626;
+    color: #a80c0c;
     padding: 10px 15px;
+    font-size: 15px;
 }
-
-#container{
-    height: 400px;
-    width: 350px;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-    
-
-.envelope{
-    background-color: #dddcdc;
-    height: 150px;
-    width: 270px;
-    position: relative;
-    left: 40px;
-    top: 160px;
-}
-
-.paper{
-    background-color: white;
-    height: 150px;
-    width: 250px;
-    position: relative;
-    left: 10px;    
-}
-
-.inner1{
-    width: 0;
-    height: 0;
-    border-bottom: 150px solid #dddcdc;
-    border-right: 250px solid transparent;
-    bottom: 150px;
-}
-
-.inner2 {
-    width: 0;
-    height: 0;
-    border-bottom: 150px solid #dddcdc;
-    border-left: 250px solid transparent;
-    bottom: 150px;
-}
-
-.cover {
-    width: 0;
-    height: 0;
-    border-right: 135px solid transparent;
-    border-left: 135px solid transparent;
-    border-top: 75px solid #dddcdc;
-    position: relative;
-    bottom: 150px;
-    right: 10px;
-    transform-origin: top;
-}
-
-.envelope:hover .cover{
-    transform: rotateX(180deg);
-}
-
 
 .form-container {
-    background-color: rgb(109, 108, 107);
-    width: 100px;
-   
+    width: 270px;
+    height: 300px;
 }
 
 .email-form {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    padding: 10%;
+    width: 60%;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 50px; 
+    font-size: 18px;
 }
+
+.style-label {
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+.style-input {
+    background-color:transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove; 
+    margin: 20px;
+    margin-left: 0;
+}
+
+.style-textarea {
+    background-color:transparent;
+    border: 1px solid white;
+    height: 8em;
+}
+
+.style-send{
+    height: 2.5em;
+    border-radius: 2em;
+    font-size: 15px;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+no-outline:focus {
+    outline: none;
+}
+
+#envelope {
+    background: #ffffff;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    margin-left: -150px;
+    margin-top: -50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+#lid {
+    position: relative;
+    top: -250px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 250px 250px 250px;
+    border-color: transparent transparent #ffffff transparent;
+
+}
+
+#letter {
+    position: relative;
+    background: linear-gradient(
+        to right bottom, 
+        #bfbcb9, 
+        #888888);
+    top: -150px;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    top: -420px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+
+
