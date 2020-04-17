@@ -4,7 +4,7 @@
 
 .container-skill{
   display: grid;
-  height: 90em;
+  height: 50em;
   transform: skewY(-7deg);
 }
   
@@ -36,7 +36,7 @@
     
     text-align: center;
     font-size: 4rem;
-    margin-top: 20rem;
+    margin-top: -20vh;
     font-family: 'Quicksand', sans-serif;
   }
   

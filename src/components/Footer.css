@@ -1,7 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300&family=Satisfy&display=swap');
+
 .footer{
-    height: 30rem;
+    height: 25rem;
     background-image: linear-gradient(
         to right bottom,
-        #de7119, 
+        #d6b89f, 
         #bbbbbb);
+    display: grid;
+    justify-self: end;
+    
+}
+
+#footer__logo-box{
+  margin: 0 auto;
+  margin-bottom: 2em;
+  font-size: 1.5rem;
+}
+
+.footer-container {
+    display: grid;
+    justify-content: center;
+}
+
+.content ul{
+    display: flex;
+    flex-direction: center;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.contact-me{
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.style-line-of-link{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.style-line-of-link{
+    font-size: 1.4rem;
 }
