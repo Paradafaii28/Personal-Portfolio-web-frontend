@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300&family=Satisfy&display=swap');
+
+
+.container-portfolio {
+    height: 60em;
+}
+
+.section-blog{
+    background-color: #f7f7f7;
+    padding: 45rem 0;
+    margin-top: -20vh;
+}
+
+.heading-blog{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.style-cards {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    border-radius: 3px;
+}
+
+.style-cards li {
+    width: 190px;
+    height: 260px;
+    margin-left: 10rem;
+    padding: 4rem;
+    font-size: 1.7rem;
+    background-color: rgb(211, 210, 210);
+    box-shadow: 0 4px 12px 4px #c3712d;
+    font-family: 'Quicksand', sans-serif;
+
+}
+

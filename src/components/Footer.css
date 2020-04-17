@@ -1,0 +1,7 @@
+.footer{
+    height: 30rem;
+    background-image: linear-gradient(
+        to right bottom,
+        #de7119, 
+        #bbbbbb);
+}

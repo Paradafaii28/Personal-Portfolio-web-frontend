@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300&family=Satisfy&display=swap');
+
+.container-skill{
+  display: grid;
+  height: 90em;
+  transform: skewY(-7deg);
+}
+  
+.container-list {
+  transform: skewY(7deg);
+}
+
+.style-h1 {
+  transform: skewY(7deg);
+  margin: 10rem;
+  text-transform: uppercase;
+}
+
+.container-list{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, auto);
+  margin-top: 130px;
+  grid-gap: 30px;
+  border-radius: 3px;
+}
+
+
+.container-listOfSkill {
+  background-image: linear-gradient(
+    to right bottom, 
+    #d8d6d6,
+    #de7119);
+    
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 20rem;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .container-list li{
+  width: 190px;
+  height: 260px;
+  margin-left: 10rem;
+  padding: 4rem;
+  font-size: 1.7rem;
+  background-color: rgb(211, 210, 210);
+  box-shadow: 0 4px 12px 4px #c3712d;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.style-li{
+  display: grid;
+  justify-content: center;
+}
+
+.style-li:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+.icon {
+  font-size: 5rem;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px rgb(97, 96, 96);
+}

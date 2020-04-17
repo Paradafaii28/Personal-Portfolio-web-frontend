@@ -3,7 +3,11 @@ import me from "../photo/parada.png"
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import About from './About';
+import Footer from './Footer';
 import Icon from './Icon';
+import Skill from './Skill'
+import Resume from './Resume'
+import Myblogs from './Myblogs';
 library.add(fab)
 
 function App() {
@@ -26,8 +30,11 @@ function App() {
             </div>
         </div>      
         <About/>
+        <Myblogs/>
+        <Skill/>
+        <Resume/>
+        <Footer/>
     </div>
-
   );
 }
 
