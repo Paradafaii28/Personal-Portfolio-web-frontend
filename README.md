@@ -3,7 +3,7 @@ This is my portfoilio website, you can check out my blog on medium and to know m
 
 
 ## How to use this website
-clone this repo
+To run the app, first fork and clone down this repo to your local device.
 npm install to download dependencies
 npm start to start app
 
@@ -13,7 +13,7 @@ Click through the blog with link you to my medium blog, you can click on the con
 also click to the contact page for write the email to my personal account for contact me.
 
 ## Technologies
-Javascript / HTML / SCSS
+Javascript / HTML / CSS
 React
 Node.js
 Sendgrid
