@@ -1,5 +1,6 @@
 import React from 'react';
-import CustomNavBar from './components/CustomNavBar'
+// import CustomNavBar from './components/CustomNavBar'
+import Navbar from './components/Navbar'
 import './App.css';
 import Home from "./components/Home"
 import ContactMe from "./components/ContactMe"
@@ -12,7 +13,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <CustomNavBar/>
+        {/* <CustomNavBar/> */}
+      <Navbar/>
       <Route exact path='/' component={Home} />  
       <Route exact path='/project' component={Project} />  
       <Route exact path='/myaccount' component={MyAccount} />  
