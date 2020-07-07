@@ -54,7 +54,7 @@ table {
 
 
 body {
-  padding: 30px;
+  padding: 10px;
 }
 
 .container-home{
@@ -68,7 +68,7 @@ body {
     #bbbbbb, 
     #de7119);
   background-repeat: no-repeat;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   position: relative;
   height: 47vh;
   overflow: hidden;

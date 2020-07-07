@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="App">
         {/* <CustomNavBar/> */}
-      <Navbar/>
+      {/* <Navbar/> */}
       <Route exact path='/' component={Home} />  
       <Route exact path='/project' component={Project} />  
       <Route exact path='/myaccount' component={MyAccount} />  
