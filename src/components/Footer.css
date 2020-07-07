@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300&family=Satisfy&display=swap');
 
 .footer{
-    height: 25rem;
+    height: 15rem;
     background-image: linear-gradient(
         to right bottom,
         #d6b89f, 
@@ -14,14 +14,16 @@
 }
 
 #footer__logo-box{
-  margin: 0 auto;
+  /* margin: 0 auto; */
   margin-bottom: 2em;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin-left: 10em;
 }
 
 .footer-container {
     display: grid;
     justify-content: center;
+    margin-left: 10em;
 }
 
 .content ul{
