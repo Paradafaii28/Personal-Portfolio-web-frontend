@@ -1,6 +1,6 @@
 import React from 'react'
 import './Resume.css'
-import PDF from "../photo/Resume.pdf"
+import PDF from "../photo/resume.pdf"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'

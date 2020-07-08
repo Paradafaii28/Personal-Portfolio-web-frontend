@@ -46,11 +46,10 @@
   height: 200px;
   /* margin-left: 10rem; */
   padding: 4rem;
-  font-size: 1.7rem;
+  font-size: 1rem;
   background-color: rgb(211, 210, 210);
   box-shadow: 0 4px 12px 4px #c3712d;
   font-family: 'Quicksand', sans-serif;
-
 }
 
 .style-li{

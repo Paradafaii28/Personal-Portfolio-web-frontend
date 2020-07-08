@@ -18,7 +18,6 @@ export default function Skill() {
                 <li className="style-li"><FontAwesomeIcon icon={['fab', 'js']} className="icon"/>Javascript</li>
                 <li className="style-li"><FontAwesomeIcon icon={['fab', 'html5']} className="icon"/>HTML/CSS</li>
                 <li className="style-li"><FontAwesomeIcon icon={['fab', 'react']} className="icon"/>React / React Native</li>
-                <li className="style-li"><FontAwesomeIcon icon={['fab', 'react']} className="icon"/>React / React Native</li>
             </ul>
         </div>
     </div>
