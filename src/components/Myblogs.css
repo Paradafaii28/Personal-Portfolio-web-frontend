@@ -4,10 +4,10 @@
 
 
 .container-portfolio {
-    height: 75em;
+    height: 60em;
     background-color: #f7f7f7;
     padding: 27rem 0;
-    margin-top: -18vh;
+    margin-top: -22vh;
 }
 
 .container-blog{
@@ -30,9 +30,10 @@
 }
 
 .style-cards li {
-    width: 190px;
-    height: 290px;
-    margin-left: 10rem;
+    margin: 0 auto;
+    width: 100px;
+    height: 200px;
+    /* margin-left: 10rem; */
     padding: 4rem;
     font-size: 1.7rem;
     background-color: rgb(255, 254, 254);
@@ -41,8 +42,8 @@
 }
 
 .blog {
-    width: 280px;
-    height: 300px;
+    width: 200px;
+    height: 220px;
     margin-left:-43px;  
 }
 

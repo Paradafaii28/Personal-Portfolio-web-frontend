@@ -41,9 +41,10 @@
   }
   
   .container-list li{
-  width: 190px;
-  height: 260px;
-  margin-left: 10rem;
+  margin: 0 auto;
+  width: 100px;
+  height: 200px;
+  /* margin-left: 10rem; */
   padding: 4rem;
   font-size: 1.7rem;
   background-color: rgb(211, 210, 210);

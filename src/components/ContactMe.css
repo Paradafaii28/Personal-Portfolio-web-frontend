@@ -12,10 +12,10 @@
         #1babee);
     background-repeat: no-repeat;
     background-size: 400% 400%;
-    margin-top: 5rem;
-    position: relative;
+    /* margin-top: 5rem; */
+    /* position: relative; */
     height: 47vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: -5px 10px 12px rgb(148, 146, 146);
     animation: change 10s ease-in-out infinite;
 }
